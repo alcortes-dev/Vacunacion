@@ -1,0 +1,148 @@
+*{box-sizing:border-box; font-family: 'Source Sans Pro', sans-serif;}
+body{ margin: 0; padding: 0; color: #7A879C; font-weight: 400;}
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+h1, h2, h3{
+    color: #1F3E72;
+    font-weight: bold;
+}
+header{
+    display: flex;
+    flex-direction: row;            
+    justify-content : space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70px;
+}
+header h1{
+    min-width: 250px;
+    margin: 0;
+    color: #3656D4;
+    font-weight: bold;
+}
+nav{
+    min-width: 460px;
+}
+nav ul{margin: 0; padding:0; text-align: right;}
+nav li{
+    list-style: none;
+    display: inline-block;
+}
+nav li a{
+    text-decoration: none;
+    padding: 10px 18px;
+    color: #6D7B93;
+}
+
+.boton{
+    background: #3050CD;
+    color: #FAFAFA;
+    border-radius: 6px;
+    box-shadow: 0px 8px 10px #94a6ee;
+}
+
+footer{
+    width: 100%;
+    background: #EEF3FF;
+    color: #758299;
+    padding: 10px 0;
+}
+#footer-main{
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+.footer-info{
+    width: 40%;
+}
+.footer-info h3{
+    color: #2A4AC8;
+    font-weight: bold;
+}
+.footer-column h3{
+    color: #1F3E72;
+}
+.footer-column a{
+    text-decoration: none;
+    color: #758299;
+    display: block;
+    margin-top: 12px;
+}
+
+.center{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.tarjeta{
+    display: grid;
+    grid-template-areas: "icono info info"
+                         "boton1  boton1  boton1";
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    height:150px;
+    align-items: center;
+}
+
+.tarjeta h3, .tarjeta p{
+    margin: 0;
+}
+.tarjeta h3{
+    color: #1F3E72;
+    margin-bottom: 10px;
+}
+
+.tarjeta-icono{grid-area: icono;}
+.tarjeta-info{ grid-area: info;}
+.tarjeta-boton { 
+    grid-area: boton1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.tarjeta-boton button{
+    padding: 20px 10px;
+    width:100%;
+    background: #F1F5FF;
+    color: #3050CD;
+    border: 0px;
+    border-radius: 6px;
+}
+.tarjeta-boton button.selected{
+    background: #3050CD;
+    color: #FAFAFA;
+    box-shadow: 0px 8px 10px #94a6ee;
+}
+.columns-2{
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+
+.tag{
+    display: inline-block;
+    
+}
+
+.tag img{
+    width: 25px;
+    padding: 5px;
+    background: #f4f5ad;
+    margin: 0 5px 0 10px;
+}
+.span1{
+    padding-right: 50px;
+}
