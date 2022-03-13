@@ -4,10 +4,10 @@ main{
     max-width: 1000px;
     margin: 0 auto;
 }
-h1, h2, h3{
-    color: #1F3E72;
-    font-weight: bold;
-}
+h1, h2, h3{ color: #1F3E72; font-weight: bold; }
+h1{font-size: 3.7rem;}
+h2{font-size: 2.3rem;}
+p{font-size: 1.3rem;}
 header{
     display: flex;
     flex-direction: row;            
@@ -20,7 +20,6 @@ header h1{
     min-width: 250px;
     margin: 0;
     color: #3656D4;
-    font-weight: bold;
 }
 nav{
     min-width: 460px;
@@ -60,10 +59,6 @@ footer{
 }
 .footer-info h3{
     color: #2A4AC8;
-    font-weight: bold;
-}
-.footer-column h3{
-    color: #1F3E72;
 }
 .footer-column a{
     text-decoration: none;
@@ -76,15 +71,13 @@ footer{
     max-width: 1000px;
     margin: 0 auto;
 }
-#contacto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+
 
 #tarjetas{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 100px;
 }
 .tarjeta{
     display: grid;
@@ -92,15 +85,16 @@ footer{
                          "boton1  boton1  boton1";
     grid-template-rows: repeat(2, 1fr);
     column-gap: 10px;
-    height:150px;
     align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 5px #dfe1e6;
+    border-radius: 10px;
 }
 
 .tarjeta h3, .tarjeta p{
     margin: 0;
 }
 .tarjeta h3{
-    color: #1F3E72;
     margin-bottom: 10px;
 }
 
@@ -112,16 +106,19 @@ footer{
     justify-content: center;
     align-items: center;
     height: 50px;
+    margin-top: 25px;
 }
-.tarjeta-boton button{
+.tarjeta-boton button, #formulario button{
     padding: 20px 10px;
     width:100%;
     background: #F1F5FF;
     color: #3050CD;
     border: 0px;
     border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
 }
-.tarjeta-boton button.selected{
+.tarjeta-boton button.selected, #formulario button.selected{
     background: #3050CD;
     color: #FAFAFA;
     box-shadow: 0px 8px 10px #94a6ee;
@@ -129,7 +126,7 @@ footer{
 .columns-2{
 display: grid;
 grid-template-columns: 1fr 1fr;
-gap: 10px;
+gap: 40px;
 }
 
 .tag{
@@ -145,4 +142,112 @@ gap: 10px;
 }
 .span1{
     padding-right: 50px;
+}
+
+.azul{
+    background: #2872DD;
+    z-index: 1;
+}
+
+.tag-info{
+    display: grid;
+    grid-template-columns: 40px 1fr 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icono{
+    background: #EBF1FF;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+#paciente{
+    height: 50%;
+}
+
+
+.split{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin: 30px 0;
+}
+
+.img-lateral{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.img-lateral img{
+    width: 100%;
+
+}
+
+
+.espacio-bajo{
+    margin-bottom: 60px;
+}
+
+#beneficios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+}
+
+#beneficios div{
+    padding: 15px;
+    box-shadow: 0px 0px 5px #e9eaec;
+    border-radius: 10px;
+}
+
+#vacunas img{
+    width: 100%;
+}
+
+#doctora{
+    background-color: #2872DD;
+    padding: 30px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#doctora img{
+    width: 90%;
+}
+
+#formulario{
+    position: relative;
+    width: 150%;
+    bottom: 10px;
+    left: 20px;
+    margin: 25px 0;
+    background-color: rgba(250,250,250, 0.9);
+    box-shadow: 0px 0px 5px #e9eaec;
+    border-radius: 7px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ver{
+    background-color: #c2c9d4;
 }
