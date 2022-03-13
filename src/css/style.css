@@ -158,9 +158,10 @@ gap: 40px;
 
 .icono{
     background: #EBF1FF;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    padding: 5px;
     text-align: center;
+    border-radius: 4px;
 }
 
 #paciente{
@@ -203,6 +204,7 @@ gap: 40px;
     border-radius: 10px;
 }
 
+
 #vacunas img{
     width: 100%;
 }
@@ -230,12 +232,29 @@ gap: 40px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+#formulario img, #caption-form img{
+    width: 25px;
+    padding: 5px;
+    background-color: #ced3e7;
+    border-radius: 3px;
+}
+#formulario span{
+    font-size: 1.4rem;
+    color: #AAA;
+}
+
+#formulario p{
+    color: #1F3E72 ;
+    font-weight: bold;
 }
 
 
-
-
-
+#caption-form h3{
+    display: inline-block;
+}
 
 
 
